@@ -45,3 +45,15 @@ footer {
 .tarjeta-icono {
     font-size: 2.5rem;
 }
+
+.galeria {
+    display: grid;
+    grid-teamplate-columns: 1fr; /* mobile-first: una sola columna por ahora */
+    gap: 20px;
+}
+
+@media (min-width: 700px) {
+    .galeria {
+        grid-teamplate-columns: repeat(3, 1fr);
+    }
+}
