@@ -1,0 +1,42 @@
+
+body {
+    background-color: #b375528f;
+    font-family: Arial, sans-serif;
+    text-align: center;
+    padding: 20px;
+}
+
+h3 {
+    color: #790d0d;
+}
+
+p {
+    color: #331808;
+    font-size: 18px;
+}
+
+ul {
+    list-style: none;
+    padding: 0;
+}
+img {
+    width: 150px;
+    border-radius: 8px;
+}
+button {
+    background-color: #642f06;
+    color: rgb(233, 187, 187);
+    border: none;
+    padding: 8px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+
+.boton1{
+    background-color: #18bd3c;
+    color: #f8f8f8;
+}
+
+
