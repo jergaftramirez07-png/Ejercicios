@@ -16,3 +16,18 @@ function obtenerDatosUsuario() {
         },800);
     });
 }
+
+const boton = document.getElementById("btnCargar");
+const resultado = document.getElementById("resultado");
+
+boton.addEventListener("click", async () => {
+    resultado.textContent = "Cargando...";
+    try {
+        const datos = await obtenerDatosUsuario();
+        resultado.textContent = `Bienvenido: ${datos.usuario}, Rol: ${datos.rol}`;
+    }catch (error) {
+        resultado.textContent = `Error: ${error.message}`;
+    } finally {
+        console.log("Intento de carga finalizado")
+    }
+});
